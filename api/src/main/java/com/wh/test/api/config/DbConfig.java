@@ -16,7 +16,7 @@ import javax.sql.DataSource;
  * @Date 2019/6/21 15:52
  */
 @Configuration
-@ConfigurationProperties
+//@ConfigurationProperties
 @EnableTransactionManagement
 @MapperScan("com.wh.test.data.dao")
 public class DbConfig {
