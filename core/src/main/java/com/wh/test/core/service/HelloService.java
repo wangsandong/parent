@@ -1,4 +1,4 @@
-package com.detectivehlh.test.core.service;
+package com.wh.test.core.service;
 
 import com.wh.test.domain.entity.UserRole;
 

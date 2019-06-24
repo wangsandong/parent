@@ -1,6 +1,6 @@
-package com.detectivehlh.test.core.service.impl;
+package com.wh.test.core.service.impl;
 
-import com.detectivehlh.test.core.service.HelloService;
+import com.wh.test.core.service.HelloService;
 import com.wh.test.data.dao.UserRoleMapper;
 import com.wh.test.domain.entity.UserRole;
 import org.springframework.beans.factory.annotation.Autowired;

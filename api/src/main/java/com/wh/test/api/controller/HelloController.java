@@ -1,6 +1,6 @@
 package com.wh.test.api.controller;
 
-import com.detectivehlh.test.core.service.HelloService;
+import com.wh.test.core.service.HelloService;
 import com.wh.test.domain.entity.UserRole;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
