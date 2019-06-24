@@ -22,6 +22,7 @@ spring:
 #      url: jdbc:oracle:thin:@10.1.2.183:1521/oracle
 #      username: taxdev
 #      password: taxdev
+#下一行durid监控必须配置
     filters: stat,wall,log4j
     druid:
       initial-size: 10
