@@ -1,6 +1,6 @@
 spring:
   application:
-    name: tax-risk
+    name: wh-test
   servlet:
     multipart:
       max-file-size: 100MB
@@ -8,13 +8,13 @@ spring:
       enabled: true
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
-    druid:
+
       # Mysql
-      driver-class-name: com.mysql.jdbc.Driver
-      validation-query: select 1
-      url: jdbc:mysql://10.1.1.151:3306/taxdev?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&useSSL=false
-      username: test
-      password: test
+    driver-class-name: com.mysql.jdbc.Driver
+    validation-query: select 1
+    url: jdbc:mysql://10.1.1.151:3306/taxdev?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    username: test
+    password: test
 
       # Oracle
 #      driver-class-name: oracle.jdbc.driver.OracleDriver
@@ -22,7 +22,8 @@ spring:
 #      url: jdbc:oracle:thin:@10.1.2.183:1521/oracle
 #      username: taxdev
 #      password: taxdev
-
+    filters: stat,wall,log4j
+    druid:
       initial-size: 10
       max-active: 100
       min-idle: 10
