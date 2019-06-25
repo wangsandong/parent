@@ -13,10 +13,10 @@ import java.util.Date;
  * BaseEntity 父类，参考自《阿里巴巴Java开发手册》第五、(一)、9.【强制】表必备三字段。
  * 所有的POJO类属性必须使用包装数据类型，参考自《阿里巴巴Java开发手册》第一、(四)、8
  *
- * @author WeiJia Lai
+ * @author wh
  */
 @Data
-@KeySequence("DXHY_TAX_SEQ_GRASP_DATA")
+@KeySequence("TAX_SEQ_GRASP_DATA")
 public abstract class BaseEntityPlus {
 
     @TableId

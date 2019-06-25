@@ -4,7 +4,7 @@ package com.wh.test.domain.base;
 /**
  * 根
  *
- * @author WeiJia Lai
+ * @author wh
  */
 public abstract class Base {
 

@@ -8,7 +8,7 @@ import java.util.Map;
 /**
  * Service接口 父类
  *
- * @author WeiJia Lai
+ * @author wh
  */
 public interface BaseService<T> extends IService<T> {
 

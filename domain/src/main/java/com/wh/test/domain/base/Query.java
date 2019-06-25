@@ -9,7 +9,7 @@ import java.util.Map;
 /**
  * 查询参数
  *
- * @author WeiJia Lai
+ * @author wh
  */
 @Data
 public class Query extends LinkedHashMap<String, Object> {

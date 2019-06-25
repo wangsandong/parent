@@ -8,7 +8,7 @@ import java.util.Map;
 /**
  * Dao 父类
  *
- * @author WeiJia Lai
+ * @author wh
  */
 public interface BaseDao<T> extends BaseMapper<T> {
 

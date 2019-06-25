@@ -8,7 +8,7 @@ import lombok.Data;
  * Entity 父类
  * 所有的POJO类属性必须使用包装数据类型，参考自《阿里巴巴Java开发手册》第一、(四)、8
  *
- * @author WeiJia Lai
+ * @author wh
  */
 @Data
 public abstract class BaseEntity extends BaseEntityPlus {

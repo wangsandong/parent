@@ -10,7 +10,7 @@ import java.util.Map;
 /**
  * Service实现类 父类
  *
- * @author WeiJia Lai
+ * @author wh
  */
 public abstract class BaseServiceImpl2<M extends BaseDao<T>, T> extends ServiceImpl<M, T> implements BaseService<T> {
 
