@@ -29,4 +29,9 @@ public class HelloServiceImpl extends BaseServiceImpl2<UserRoleMapper, UserRole>
     public List<UserRole> sayHello2() {
         return baseMapper.selectList(new QueryWrapper<UserRole>().eq("id",4));
     }
+
+    @Override
+    public List<UserRole> helloPage() {
+        return baseMapper.selectList(new QueryWrapper<>());
+    }
 }

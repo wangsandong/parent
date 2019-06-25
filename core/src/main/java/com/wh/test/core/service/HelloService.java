@@ -12,4 +12,5 @@ import java.util.List;
 public interface HelloService extends BaseService<UserRole> {
     List<UserRole> sayHello();
     List<UserRole> sayHello2();
+    List<UserRole> helloPage();
 }
