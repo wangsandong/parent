@@ -17,4 +17,9 @@ public class HelloController {
     public List<UserRole> hello() {
         return helloService.sayHello();
     }
+
+    @GetMapping("/hello2")
+    public List<UserRole> hello2() {
+        return helloService.sayHello2();
+    }
 }
