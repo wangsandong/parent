@@ -1,3 +1,6 @@
+logging:
+  level:
+    com.wh.test: debug
 spring:
   application:
     name: wh-test
