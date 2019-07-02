@@ -5,7 +5,7 @@ import com.github.pagehelper.PageHelper;
 import com.wh.test.core.service.HelloService;
 import com.wh.test.domain.base.Query;
 import com.wh.test.domain.base.R;
-import com.wh.test.domain.entity.UserRole;
+import com.wh.test.domain.entity.UserRoleEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -21,12 +21,12 @@ public class HelloController {
     private HelloService helloService;
 
     @GetMapping("/hello")
-    public List<UserRole> hello() {
+    public List<UserRoleEntity> hello() {
         return helloService.sayHello();
     }
 
     @GetMapping("/hello2")
-    public List<UserRole> hello2() {
+    public List<UserRoleEntity> hello2() {
         return helloService.sayHello2();
     }
 
@@ -37,7 +37,7 @@ public class HelloController {
          * 2.分页操作
          */
         Page page = PageHelper.startPage(query.getPageNum(), query.getPageSize());
-        List<UserRole> list = helloService.helloPage();
+        List<UserRoleEntity> list = helloService.helloPage();
         return R.ok().put("total", page.getTotal()).put("list", list);
     }
 }

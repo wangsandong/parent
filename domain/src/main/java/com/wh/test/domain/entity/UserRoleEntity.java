@@ -10,7 +10,7 @@ import lombok.Data;
  */
 @Data
 @TableName(value = "users")
-public class UserRole extends BaseEntity {
-    private String username;
+public class UserRoleEntity extends BaseEntity {
+    private String userName;
     private String password;
 }

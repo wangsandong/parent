@@ -3,9 +3,9 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.wh.test.data.dao.UserRoleMapper">
     <!--用于与数据库字段作一一对应-->
-    <resultMap id="userRoleMap" type="com.wh.test.domain.entity.UserRole">
+    <resultMap id="userRoleMap" type="com.wh.test.domain.entity.UserRoleEntity">
         <result column="id" property="id"/>
-        <result column="username" property="username"/>
+        <result column="username" property="userName"/>
         <result column="password" property="password"/>
     </resultMap>
 

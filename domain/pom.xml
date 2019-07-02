@@ -31,6 +31,29 @@
             <artifactId>commons-lang3</artifactId>
             <version>3.9</version>
         </dependency>
+
+        <!--ES配置开始-->
+        <dependency>
+            <groupId>org.elasticsearch</groupId>
+            <artifactId>elasticsearch</artifactId>
+            <version>7.2.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.elasticsearch.client</groupId>
+            <artifactId>transport</artifactId>
+            <version>7.2.0</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>elasticsearch</artifactId>
+                    <groupId>org.elasticsearch</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-elasticsearch</artifactId>
+            <version>3.1.9.RELEASE</version>
+        </dependency>
     </dependencies>
 
 </project>
