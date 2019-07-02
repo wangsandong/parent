@@ -5,6 +5,7 @@ import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.data.elasticsearch.repository.config.EnableElasticsearchRepositories;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import org.springframework.transaction.PlatformTransactionManager;
@@ -16,9 +17,9 @@ import javax.sql.DataSource;
  * @Date 2019/6/21 15:52
  */
 @Configuration
-//@ConfigurationProperties
 @EnableTransactionManagement
 @MapperScan("com.wh.test.data.dao")
+@EnableElasticsearchRepositories(basePackages = {"com.wh.test.data"})
 public class DbConfig {
     @Bean
     @ConfigurationProperties("spring.datasource")

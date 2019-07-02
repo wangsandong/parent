@@ -14,7 +14,6 @@ import org.springframework.data.elasticsearch.repository.config.EnableElasticsea
  * @date: 2019/6/21 16:09
  */
 @SpringBootApplication(scanBasePackages = {"com.wh.test"})
-@EnableElasticsearchRepositories(basePackages = {"com.wh.test.data"})
 public class Application {
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
