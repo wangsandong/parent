@@ -19,7 +19,7 @@ import javax.sql.DataSource;
 @Configuration
 @EnableTransactionManagement
 @MapperScan("com.wh.test.data.dao")
-@EnableElasticsearchRepositories(basePackages = {"com.wh.test.data"})
+@EnableElasticsearchRepositories(basePackages = {"com.wh.test.data"})//es不可缺少的注解
 public class DbConfig {
     @Bean
     @ConfigurationProperties("spring.datasource")

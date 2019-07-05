@@ -5,13 +5,13 @@
     <!--用于与数据库字段作一一对应-->
     <resultMap id="userRoleMap" type="com.wh.test.domain.entity.UserRoleEntity">
         <result column="id" property="id"/>
-        <result column="username" property="userName"/>
+        <result column="user_name" property="userName"/>
         <result column="password" property="password"/>
     </resultMap>
 
     <!--查询下方列出的所有列-->
     <sql id="allColumns">
-        id, username,password
+        id, user_name,password
     </sql>
 
     <!--定义表名-->
