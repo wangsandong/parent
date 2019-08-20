@@ -19,9 +19,9 @@ spring:
       # Mysql
     driver-class-name: com.mysql.cj.jdbc.Driver
     validation-query: select 1
-    url: jdbc:mysql://10.1.1.151:3306/taxdev?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&useSSL=false
-    username: test
-    password: test
+    url: jdbc:mysql://localhost:3306/taxdev?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
+    username: root
+    password: root
 
       # Oracle
 #      driver-class-name: oracle.jdbc.driver.OracleDriver

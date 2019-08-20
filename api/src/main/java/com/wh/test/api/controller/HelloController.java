@@ -2,15 +2,13 @@ package com.wh.test.api.controller;
 
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
+import com.wh.test.annotation.TaxLog;
 import com.wh.test.core.service.HelloService;
 import com.wh.test.domain.base.Query;
 import com.wh.test.domain.base.R;
 import com.wh.test.domain.entity.UserRoleEntity;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
 import java.util.List;
@@ -21,7 +19,8 @@ public class HelloController {
     private HelloService helloService;
 
     @GetMapping("/hello")
-    public List<UserRoleEntity> hello() {
+    @TaxLog("测试hello")
+    public List<UserRoleEntity> hello(@RequestParam String sayHello) {
         return helloService.sayHello();
     }
 
